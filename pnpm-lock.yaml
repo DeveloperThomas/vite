@@ -737,7 +737,7 @@ importers:
 
   packages/vite:
     specifiers:
-      '@ampproject/remapping': ^1.0.2
+      '@ampproject/remapping': ^2.0.1
       '@babel/parser': ^7.16.6
       '@babel/types': ^7.16.0
       '@rollup/plugin-alias': ^3.1.8
@@ -815,7 +815,7 @@ importers:
     optionalDependencies:
       fsevents: 2.3.2
     devDependencies:
-      '@ampproject/remapping': 1.0.2
+      '@ampproject/remapping': 2.0.1
       '@babel/parser': 7.16.6
       '@babel/types': 7.16.0
       '@rollup/plugin-alias': 3.1.8_rollup@2.62.0
@@ -993,11 +993,12 @@ packages:
       '@algolia/requester-common': 4.11.0
     dev: true
 
-  /@ampproject/remapping/1.0.2:
-    resolution: {integrity: sha512-SncaVxs+E3EdoA9xJgHfWPxZfowAgeIsd71VpqCKP6KNKm6s7zSqqvUc70UpKUFsrV3dAmy6qxHoIj5NG+3DiA==}
+  /@ampproject/remapping/2.0.1:
+    resolution: {integrity: sha512-EldHF4Ufj3NL9yCAmYrPzY+3/Yqrzxu24F4Mu4nRjK3w70AKYRmhuLwGZdA9JeoDsbIwkgGkbqUK2INuF582Og==}
     engines: {node: '>=6.0.0'}
     dependencies:
-      '@jridgewell/resolve-uri': 1.0.0
+      '@jridgewell/resolve-uri': 3.0.3
+      '@jridgewell/trace-mapping': 0.2.2
       sourcemap-codec: 1.4.8
     dev: true
 
@@ -1834,9 +1835,16 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@jridgewell/resolve-uri/1.0.0:
-    resolution: {integrity: sha512-9oLAnygRMi8Q5QkYEU4XWK04B+nuoXoxjRvRxgjuChkLZFBja0YPSgdZ7dZtwhncLBcQe/I/E+fLuk5qxcYVJA==}
-    engines: {node: '>=6.0.0'}
+  /@jridgewell/resolve-uri/3.0.3:
+    resolution: {integrity: sha512-fuIOnc81C5iRNevb/XPiM8Khp9bVjreydRQ37rt0C/dY0PAW1DRvEM3WrKX/5rStS5lbgwS0FCgqSndh9tvK5w==}
+    engines: {node: '>=10.0.0'}
+    dev: true
+
+  /@jridgewell/trace-mapping/0.2.2:
+    resolution: {integrity: sha512-I9AGQzMPEzQNJgib2YSqciYWazGsXSyu1rEEeaPeM1764ZtnfNTxA5bofzG/POMI3QcvpBUxwecOPZM6ZhkEpg==}
+    dependencies:
+      '@jridgewell/resolve-uri': 3.0.3
+      sourcemap-codec: 1.4.8
     dev: true
 
   /@mapbox/node-pre-gyp/1.0.8:
